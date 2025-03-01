@@ -4,8 +4,10 @@
             <% for(let i = 0; i < messages.length; i++) { %>
                 <li>
                     <span class="name"><%= messages[i].text %></span>
+                    <a href="/message/<%= messages[i].id %>">View</a>
                 </li>
             <% } %>
-        </ul>   
+        </ul>
+        <a href="/new">Post</a>
     </body>
 </html>
